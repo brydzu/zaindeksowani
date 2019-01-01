@@ -7,10 +7,12 @@ import Info from './info';
 import Kontakt from './kontakt';
 import Blog from './blog';
 import Tabele from './tabele';
+import Home from './home';
 
 
 const Main = () => (
   <Switch>
+    <Route exact path="/" component={Home} />
     <Route exact path="/landingpage" component={Landingpage} />
     <Route path="/info" component={Info} />
     <Route path="/przepisy" component={Przepisy} />

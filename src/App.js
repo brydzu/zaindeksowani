@@ -11,12 +11,12 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-    <Layout>
-                   <h1 id="naglowek">Zaindeksowani glikemicznie</h1>
+                         <h1 id="naglowek">Zaindeksowani glikemicznie</h1>
+
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}}
-        to="/landingpage"><img src="./assets/images.jpg"/>Zaindeksowani glikemicznie</Link>} scroll>
+        to="/landingpage"><img src="#"/>Zaindeksowani glikemicznie</Link>} noscroll>
             <Navigation>
-                <Link to="/landingpage">Home</Link>
+                <Link to="/landingpage">Strona główna</Link>
                 <Link to="/info">Info</Link>
                 <Link to="/przepisy">Przepisy</Link>
                 <Link to="/kalkulatory">Kalkulatory</Link>
@@ -81,7 +81,6 @@ class App extends Component {
         </FooterLinkList>
     </FooterSection>
 </Footer>
-    </Layout>
 </div>
     );
   }

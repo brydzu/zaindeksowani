@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import Salatki from './Przepisy/Salatki';
 
 class Przepisy extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Przepisy extends Component {
     if(this.state.activeTab === 0) {
       return(
         <div className="projects-grid">
+        <Salatki/>
         <h1>Sałatki i surówki</h1>
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto'}}>
